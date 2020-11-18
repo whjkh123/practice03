@@ -8,14 +8,16 @@ public class Ex07 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("숫자를 입력하세요.");
+		System.out.println("숫자를 입력하세요. ");
 		
-		for(int line = 1; line <= 6; line++) {
-			for(int x = line; x <= line; x++) {
+		int input = sc.nextInt();
+		
+		for(int line = 1; line <= input; line++) {
+			for(int x = 1; x <= line; x++) {
 				System.out.print(x);
-			}		
-			System.out.println();
-		}
+			}System.out.println();
+		}sc.close();
+		
 	}
 	
 }

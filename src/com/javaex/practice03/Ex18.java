@@ -9,16 +9,17 @@ public class Ex18 {
 				
 				System.out.print("숫자를 입력하세요: ");
 				int count = sc.nextInt();
+				
 				for(int y = count; y > 0; y--) {
 					for(int x = 0; x < y; x++) {
 					System.out.print("*");
 					}System.out.println();
 				}
-				for(int y = 1; y <= count; y++) {
-					for(int x = 0; x < y; x++) {
+				for(int y = 1; y <= count - 1; y++) {
+					for(int x = 0; x < y + 1; x++) {
 					System.out.print("*");
 					}System.out.println();
-				}
+				}sc.close();
 
 	}
 
